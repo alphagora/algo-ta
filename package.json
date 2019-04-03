@@ -1,0 +1,50 @@
+{
+  "name": "algo-ta",
+  "version": "1.0.0",
+  "description": "Simple Algorithmic Technical Analysis script",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphagora/algo-ta.git"
+  },
+  "keywords": [
+    "Algorithmic",
+    "Trading",
+    "Crypto",
+    "Trading",
+    "Bot",
+    "Quantitative",
+    "Finance",
+    "Quant",
+    "Finance",
+    "Technical",
+    "Analysis",
+    "Exponential",
+    "Moving",
+    "Average",
+    "EMA",
+    "Bitcoin",
+    "BTC",
+    "Cryptocurrency",
+    "Crypto",
+    "Trading",
+    "Trading",
+    "Node",
+    "Javascript"
+  ],
+  "author": "Roger Ramia",
+  "license": "MIT",
+  "dependencies": {
+    "compute-covariance": "^1.0.1",
+    "gdax": "^0.8.0",
+    "moment": "^2.24.0",
+    "talib": "^1.0.6"
+  },
+  "bugs": {
+    "url": "https://github.com/alphagora/algo-ta/issues"
+  },
+  "homepage": "https://github.com/alphagora/algo-ta#readme"
+}
