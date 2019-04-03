@@ -25,7 +25,7 @@ let _product = 'BTC-USD',
 // for the specified product.  Period interval is specified in seconds:
 // 1m=60, 5m=300, 15m=900, 1h=3600, 6h=21600, 1d=86400
 // returns a Promise to support flexible execution including await, then(), etc.
-async function prices(product, interval) {
+function prices(product, interval) {
     return new Promise(function (resolve, reject) {
         client.getProductHistoricRates(product, {granularity:interval}, function(err, resp) {
             if(!err) {
@@ -49,7 +49,7 @@ async function prices(product, interval) {
 // utility talib wrapper to calculate an indicator by name
 // for a given period and set of historical prices
 // returns a Promise to support flexible execution including await, then(), etc.
-async function calculate(name, period, prices) {
+function calculate(name, period, prices) {
     return new Promise(function (resolve, reject) {
         talib.execute({
             name: name,
@@ -179,7 +179,7 @@ async function poll() {
 // historical data and return the new results
 function run() {
     poll();
-    if (_poll) timer = setInterval(_interval*1000, poll());
+    if (_poll) setInterval(poll, _interval*1000);
 }
 
 // go...
