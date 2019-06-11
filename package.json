@@ -38,7 +38,6 @@
   "author": "Roger Ramia",
   "license": "MIT",
   "dependencies": {
-    "compute-covariance": "^1.0.1",
     "gdax": "^0.8.0",
     "moment": "^2.24.0",
     "talib": "^1.0.6"
