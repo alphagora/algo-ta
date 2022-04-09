@@ -39,7 +39,7 @@
   "license": "MIT",
   "dependencies": {
     "gdax": "^0.8.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "talib": "^1.0.6"
   },
   "bugs": {
